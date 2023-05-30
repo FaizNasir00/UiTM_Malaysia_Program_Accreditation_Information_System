@@ -8,7 +8,7 @@ $email = $_POST['email'];
 $tarikh_permohonan = date('Y-m-d');
 
 //Database connection 
-$conn = new mysqli('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+$conn = new mysqli('', '', '', '');
 
 if ($conn->connect_error){
         die('Connection Failed : ' . $conn->connect_error);
