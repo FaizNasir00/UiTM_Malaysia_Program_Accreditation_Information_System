@@ -10,7 +10,7 @@ $borang_terima_pelantikan = isset($_POST['borang_terima_pelantikan']) ? $_POST['
 $bayaran_honororium = isset($_POST['bayaran_honororium']) ? $_POST['bayaran_honororium'] : '';
 
 //Database connection
-$conn = new mysqli('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+$conn = new mysqli('', '', '', '');
 
 // Check connection
 if ($conn->connect_error) {
