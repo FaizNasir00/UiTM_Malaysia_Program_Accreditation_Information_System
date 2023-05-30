@@ -40,16 +40,8 @@ CREATE TABLE `fakulti` (
 --
 
 INSERT INTO `fakulti` (`fakulti_id`, `nama_fakulti`, `alamat_fakulti`, `no_tel_fakulti`, `no_fax_fakulti`) VALUES
-(1, 'FSKM', 'Shah Alam', '012345678', '013245678'),
-(2, 'Kolej Pengajian Antarabangsa', 'UiTM Dungun', '0148549669', '035468955'),
-(3, 'FSKM', 'UiTM Dungun', '0148549669', '01845966'),
-(4, 'FSKM', 'UiTM Dungun', '0148549669', '01845966'),
-(5, 'FSKM', 'UiTM Dungun', '0148549669', '01845966'),
-(6, 'Kolej Pengajian Antarabangsa', 'UiTM Dungun', '0148549669', '01845966'),
-(7, 'Kolej Pengajian Antarabangsa', 'UiTM Dungun', '0148549669', '01845966'),
-(8, 'FSKM', 'UiTM Dungun', '0148549669', '01845966'),
-(9, 'FSKM', 'UiTM Dungun', '0148549669', '01845966'),
-(10, 'Kolej Pengajian Antarabangsa', 'UiTM Dungun', '0148549669', '01845966');
+(1, 'FSKM', 'Shah Alam', '', ''),
+
 
 -- --------------------------------------------------------
 
@@ -75,11 +67,8 @@ CREATE TABLE `panel` (
 --
 
 INSERT INTO `panel` (`panel_id`, `jenis_panel`, `nama_panel`, `bidang`, `institusi`, `no_tel`, `emel`, `cv`, `borang_terima_pelantikan`, `bayaran_honororium`) VALUES
-(2, 'Panel Dalam', 'Rahman', 'business', 'Fakulti Perakaunan', '0123654987', 'faiz@gmail.com', '', '', ''),
-(3, 'Panel Dalam', 'Rahman', 'business', 'AAGBS', '0123654987', 'faiz@gmail.com', 0x313233, 0x617364, 'Yes'),
-(4, 'Panel Luar', 'Rahman', 'business', 'Fakulti Perakaunan', '0123654987', 'faiz@gmail.com', '', '', 'Yes'),
-(5, 'Panel Luar', 'Rahman', 'business', 'AAGBS', '0123654987', 'faiz@gmail.com', '', '', 'Yes'),
-(6, 'Panel Luar', 'Rahman', 'business', 'Fakulti Perakaunan', '0123654987', 'faiz@gmail.com', '', '', 'Yes');
+(2, 'Panel Dalam', 'Rahman', 'business', 'Fakulti ', '', 'faiz@gmail.com', '', '', ''),
+
 
 -- --------------------------------------------------------
 
@@ -126,10 +115,7 @@ CREATE TABLE `permohonan` (
 --
 
 INSERT INTO `permohonan` (`permohonan_id`, `status_id`, `jenis_permohonan`, `tarikh_permohonan`, `kampus`, `alamat_program`, `no_fon`, `no_faks`, `emel_rasmi`, `kod_program`, `nama_program_bm`, `nama_program_bi`, `tarikh_jkpt`, `tahap_mqf`, `kod_nec`, `tarikh_program_dimulakan`, `tarikh_kohort_pertama_bergraduat`, `nama_pic`, `jawatan_pic`, `no_tel_pejabat_pic`, `no_tel_bimbit_pic`, `pautan_dokumen_penilaian`, `tarikh_diterima_uhek`, `tarikh_senat`, `bil_senat`, `no_rujukan_mqa`, `sijil_mqa_bm`, `sijil_mqa_bi`, `panel_dalam`, `panel_luar`, `status_permohonan`) VALUES
-(1, 1, 'IQA03', '2023-03-27', 'aaaaa', 'aaaaaa', '1', '1', '1@2.com', '123', 'Diploma Pengurusan Halal', 'Diploma In Halal Management', '2023-03-27', '4', '123', '2023-03-27', '2023-03-27', 'assdd', 'assd', '1', '1', 'www.drive.com', '2023-03-27', '2023-03-08', '123', '1234', 'aaaa', 'aaaa', 'aaaaa', 'aaaaa', 'selesai'),
-(2, 2, 'IQA04', '2023-03-27', 'aaaaa', 'aaaaaa', '1', '1', '1@2.com', '123', 'Diploma Pengurusan Halal', 'Diploma In Halal Management', '2023-03-27', '4', '123', '2023-03-27', '2023-03-27', 'assdd', 'assd', '1', '1', 'www.drive.com', '2023-03-27', '2023-03-08', '123', '1234', 'aaaa', 'aaaa', 'aaaaa', 'aaaaa', 'selesai'),
-(3, 2, 'IQA04', '2023-03-27', 'aaaaa', 'aaaaaa', '1', '1', '1@2.com', '123', 'Diploma Pengurusan Halal', 'Diploma In Halal Management', '2023-03-27', '4', '123', '2023-03-27', '2023-03-27', 'assdd', 'assd', '1', '1', 'www.drive.com', '2023-03-27', '2023-03-08', '123', '1234', 'aaaa', 'aaaa', 'aaaaa', 'aaaaa', 'selesai');
-
+-- Private
 -- --------------------------------------------------------
 
 --
@@ -160,10 +146,7 @@ CREATE TABLE `status` (
 --
 
 INSERT INTO `status` (`status_id`, `permohonan_id`, `status_terkini`, `tarikh_terima_dokumen`, `tarikh_lantik_panel`, `tarikh_penilaian_pertama`, `tarikh_maklumbalas_pertama`, `tarikh_penilaian_kedua`, `tarikh_maklumbalas_kedua`, `tarikh_jkppp`, `tarikh_senat`, `tarikh_penghantaran_ke_mqa`, `tarikh_terima_sps02`, `tarikh_tersenarai_di_mqr`, `tarikh_selesai`, `catatan`) VALUES
-(1, 1, 'Selesai', '2023-03-01', '2023-03-02', '2023-03-03', '2023-03-04', '2023-03-05', '2023-03-06', '2023-03-07', '2023-03-08', '2023-03-09', '2023-03-10', '2023-03-11', '2023-03-12', 'ko n te'),
-(2, 2, 'Selesai', '2023-03-01', '2023-03-02', '2023-03-03', '2023-03-04', '2023-03-05', '2023-03-06', '2023-03-07', '2023-03-08', '2023-03-09', '2023-03-10', '2023-03-11', '2023-03-12', 'ko n te'),
-(3, 3, 'Selesai', '2024-03-01', '2024-03-02', '2024-03-03', '2024-03-04', '2024-03-05', '2024-03-06', '2024-03-07', '2024-03-08', '2024-03-09', '2024-03-10', '2024-03-11', '2024-03-12', 'ko n te');
-
+-- Private data
 -- --------------------------------------------------------
 
 --
@@ -182,8 +165,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `username`, `email`, `password`) VALUES
-(1, 'FaizNasir', 'faizhiruko00@gmail.com', '$2y$10$G51kBz4pdgtIMsTUxo5caOl0dBLKrLCMA3QH9NvVGFmFF/mICfuJ2'),
-(2, 'inqka', 'inqka@uitm.edu.my', '$2y$10$yJUzXzZuOkGed6Gjjvc2w.I39hqkWtGI2h/mRkC468KqpITLNnBgW');
+(1, 'FaizGusion', 'faiz@gmail.com', '$2y$10$fdesfsdfsef/mICfuJ2'),
 
 --
 -- Indexes for dumped tables
