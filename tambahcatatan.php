@@ -100,7 +100,7 @@
         $catatan = '';
         $success = false;
         
-        $conn = mysqli_connect("localhost", "inqkacom_faiz123", "faiznasir123", "inqkacom_pais");
+        $conn = mysqli_connect("", "", "", "");
         
         if (!$conn) {
             die("Connection failed: " . mysqli_connect_error());
