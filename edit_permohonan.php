@@ -145,7 +145,7 @@
 
 <?php
 // Database connection
-$conn = mysqli_connect("localhost", "inqkacom_faiz123", "faiznasir123", "inqkacom_pais");
+$conn = mysqli_connect("", "", "", "");
 
 // Check connection
 if (!$conn) {
