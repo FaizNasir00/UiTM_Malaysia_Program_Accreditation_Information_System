@@ -1,8 +1,8 @@
 <?php
-define("DB_SERVER", "localhost");
-define("DB_USERNAME", "inqkacom_faiz123");
-define("DB_PASSWORD", "faiznasir123");
-define("DB_NAME", "inqkacom_pais");
+define("DB_SERVER", "");
+define("DB_USERNAME", "");
+define("DB_PASSWORD", "");
+define("DB_NAME", "");
 
 # Connection
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
