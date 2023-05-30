@@ -146,10 +146,10 @@
     
 <?php
     // PHP code to retrieve data from database and display it in the table
-    $servername = "localhost";
-    $username = "inqkacom_faiz123";
-    $password = "faiznasir123";
-    $dbname = "inqkacom_pais";
+    $servername = "";
+    $username = "";
+    $password = "";
+    $dbname = "";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
