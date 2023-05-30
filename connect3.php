@@ -6,10 +6,10 @@ ini_set('display_errors', 1);
 ini_set('log_errors', 1);
 ini_set('error_log', '/path/to/error.log');
 
-$servername = "localhost";
-$username = "inqkacom_faiz123";
-$password = "faiznasir123";
-$dbname = "inqkacom_pais";
+$servername = "";
+$username = "";
+$password = "";
+$dbname = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
