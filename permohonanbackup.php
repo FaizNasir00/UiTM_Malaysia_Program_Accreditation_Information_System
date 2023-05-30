@@ -97,10 +97,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     if ($isDataFilled) {
-        $servername = "localhost";
-        $username = "inqkacom_faiz123";
-        $password = "faiznasir123";
-        $dbname = "inqkacom_pais";
+        $servername = "";
+        $username = "";
+        $password = "";
+        $dbname = "";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -132,17 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
     <label>Jenis Permohonan:</label>
     <select name="jenis_permohonan">
-        <option value="IQA01(B)">Akreditasi Sementara bagi Program Baharu (IQA01(B))</option>
-        <option value="IQA01(T/L)">Akreditasi Sementara bagi Program Sedia Ada di Lokasi Baharu (IQA01(TL))</option>
-        <option value="IQA02(B)">Akreditasi Penuh bagi Program Baharu (IQA02(B))</option>
-        <option value="IQA02(T/L)">Akreditasi Penuh bagi Program Sedia Ada di Lokasi Baharu (IQA02(TL))</option>
-        <option value="IQA03">Semakan Kurikulum Melebihi 30% (IQA03)</option>
-        <option value="IQA04">Audit Pematuhan (IQA04)</option>
-        <option value="IQA05">Pindah Premis (IQA05)</option>
-        <option value="IQA06">Akreditasi Sementara bagi Program ODL (COPPA-ODL) (IQA06)</option>
-        <option value="IQA07">Akreditasi Penuh bagi Program ODL (COPPA-ODL) (IQA07)</option>
-        <option value="IQA08">Akreditasi Sementara bagi Program TVET (COPTPA) (IQA08)</option>
-        <option value="IQA09">Akreditasi Penuh bagi Program TVET (COPTPA) (IQA09)</option>
+
     </select>
     <br><br>
 
