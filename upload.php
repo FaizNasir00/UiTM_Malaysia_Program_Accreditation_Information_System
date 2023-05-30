@@ -1,9 +1,9 @@
 <?php
 // Establish a database connection
-$servername = "localhost";
-$username = "inqkacom_faiz123";
-$password = "faiznasir123";
-$dbname = "inqkacom_pais";
+$servername = "";
+$username = "";
+$password = "";
+$dbname = "";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
