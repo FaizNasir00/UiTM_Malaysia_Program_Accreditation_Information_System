@@ -4,10 +4,10 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$servername = "localhost";
-$username = "inqkacom_faiz123";
-$password = "faiznasir123";
-$dbname = "inqkacom_pais";
+$servername = "";
+$username = "";
+$password = "";
+$dbname = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
