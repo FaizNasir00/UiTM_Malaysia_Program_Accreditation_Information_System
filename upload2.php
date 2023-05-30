@@ -12,10 +12,10 @@ if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
 
 function import_csv($filename) {
     // your database connection
-    $servername = "localhost";
-    $username = "inqkacom_faiz123";
-    $password = "faiznasir123";
-    $dbname = "inqkacom_pais";
+    $servername = "";
+    $username = "";
+    $password = "";
+    $dbname = "";
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     if ($conn->connect_error) {
