@@ -7,10 +7,10 @@ $no_tel_fakulti = $_POST['no_tel_fakulti'];
 $no_fax_fakulti = $_POST['no_fax_fakulti'];
 
 // connect to the database
-$servername = "localhost";
-$username = "inqkacom_faiz123";
-$password = "faiznasir123";
-$dbname = "inqkacom_pais";
+$servername = "";
+$username = "";
+$password = "";
+$dbname = "";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // check connection
