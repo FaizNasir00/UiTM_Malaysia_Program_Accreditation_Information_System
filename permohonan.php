@@ -394,18 +394,8 @@ footer a:hover {
 		    <label for="jenis_permohonan">Jenis Permohonan </label><br><br>
                 <select name="jenis_permohonan" id="jenis_permohonan">
                 <option value="">Tekan disini untuk pilih jenis permohonan</option>
-                    <option value="IQA01(B)">Akreditasi Sementara bagi Program Baharu (IQA01(B))</option>
-                    <option value="IQA01(T/L)">Akreditasi Sementara bagi Program Sedia Ada di Lokasi Baharu (IQA01(TL))</option>
-                    <option value="IQA02(B)">Akreditasi Penuh bagi Program Baharu (IQA02(B))</option>
-                    <option value="IQA02(T/L)">Akreditasi Penuh bagi Program Sedia Ada di Lokasi Baharu (IQA02(TL))</option>
-                    <option value="IQA02(D)">Deemed (IQA02(D))</option>
-                    <option value="IQA03">Semakan Kurikulum Melebihi 30% (IQA03)</option>
-                    <option value="IQA04">Audit Pematuhan (IQA04)</option>
-                    <option value="IQA05">Pindah Premis (IQA05)</option>
-                    <option value="IQA06">Akreditasi Sementara bagi Program ODL (COPPA-ODL) (IQA06)</option>
-                    <option value="IQA07">Akreditasi Penuh bagi Program ODL (COPPA-ODL) (IQA07)</option>
-                    <option value="IQA08">Akreditasi Sementara bagi Program TVET (COPTPA) (IQA08)</option>
-                    <option value="IQA09">Akreditasi Penuh bagi Program TVET (COPTPA) (IQA09)</option>
+                    <option value="()">Akreditasi Sementara bagi Program Baru ()</option>
+         	//Private
                 </select><br>
 
             <label for="kampus">Kolej Pengajian/Fakulti/Kampus </label><br><br>
@@ -413,7 +403,7 @@ footer a:hover {
                     <option value="">Pilih Kolej/Fakulti/Kampus</option>
                     <?php
                     // Connect to database
-                    $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                    $conn = mysqli_connect('localhost', '', '', '');
                 
                     // Execute SELECT DISTINCT statement, exclude NULL values
                     $result = mysqli_query($conn, 'SELECT DISTINCT nama_fakulti FROM fakulti WHERE nama_fakulti IS NOT NULL');
@@ -433,7 +423,7 @@ footer a:hover {
                     <option value="">Pilih Alamat Program</option>
                     <?php
                     // Connect to database
-                    $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                    $conn = mysqli_connect('', '', '', '');
                 
                     // Check connection
                     if (!$conn) {
@@ -580,7 +570,7 @@ footer a:hover {
                 <option value="">Pilih Panel Dalam 1</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -608,7 +598,7 @@ footer a:hover {
                 <option value="">Pilih Institusi Untuk Panel Dalam 1</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -637,7 +627,7 @@ footer a:hover {
                 <option value="">Pilih Panel Dalam 2</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -666,7 +656,7 @@ footer a:hover {
                 <option value="">Pilih Institusi Untuk Panel Dalam 2</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -694,7 +684,7 @@ footer a:hover {
                 <option value="">Pilih Panel Dalam 3</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -722,7 +712,7 @@ footer a:hover {
                 <option value="">Pilih Institusi Untuk Panel Dalam 3</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -751,7 +741,7 @@ footer a:hover {
                 <option value="">Pilih Panel Dalam 4</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -779,7 +769,7 @@ footer a:hover {
                 <option value="">Pilih Institusi Untuk Panel Dalam 4</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -808,7 +798,7 @@ footer a:hover {
                 <option value="">Pilih Panel Luar 1</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -836,7 +826,7 @@ footer a:hover {
                 <option value="">Pilih Institusi Untuk Panel Luar 1</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -865,7 +855,7 @@ footer a:hover {
                 <option value="">Pilih Panel Luar 2</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -893,7 +883,7 @@ footer a:hover {
                 <option value="">Pilih Institusi Untuk Panel Luar 2</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -922,7 +912,7 @@ footer a:hover {
                 <option value="">Pilih Panel Luar 3</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -950,7 +940,7 @@ footer a:hover {
                 <option value="">Pilih Institusi Untuk Panel Luar 3</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -979,7 +969,7 @@ footer a:hover {
                 <option value="">Pilih Panel Luar 4</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -1007,7 +997,7 @@ footer a:hover {
                 <option value="">Pilih Institusi Untuk Panel Luar 4</option>
                 <?php
                 // Connect to database
-                $conn = mysqli_connect('localhost', 'inqkacom_faiz123', 'faiznasir123', 'inqkacom_pais');
+                $conn = mysqli_connect('', '', '', '');
                 // Check connection
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
