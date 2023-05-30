@@ -1,0 +1,285 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loader {
+  border: 10px solid #333; /* Dark gray border color */
+  border-top: 10px solid #777; /* Light gray border color */
+  border-radius: 60%;
+  width: 60px;
+  height: 60px;
+  animation: rotate 1s linear infinite;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+/* CSS for the content */
+.content {
+  display: none; /* initially hide the content */
+}
+
+/* CSS for the fade-in effect */
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Keyframes for the spin animation */
+@keyframes spin {
+  0% { transform: rotate(0deg) scale(0.8); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(0.8); }
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+body {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #f0f0f0;
+}
+
+header {
+  height: 20vh;
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+header span {
+  position: fixed;
+  left: 5%;
+}
+
+header img {
+  height: 40%;
+  margin-right: 60px;
+  margin-left:100px;
+
+}
+
+header h1 {
+  font-size: 35px;
+  color: cadetblue;
+  text-align: center;
+  margin: 0;
+
+}
+
+.user-manual {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.8;
+  padding: 4rem;
+  font-size: 20px;
+  background-color: #f9f9f9;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  margin-top: -40px;
+}
+
+    .h2 {
+        font-size: 18px;
+    }
+.video-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .video-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .video-icon p {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  #video-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 400px; /* Adjust the width as needed */
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+
+  #video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+ #main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+  }
+  
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+        
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 10px 10px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+        
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+        
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    font-size: 46px;
+    margin-left: 50px;
+}
+
+main {
+  display: flex;
+  transition: margin-left .5s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: green;
+    color: white;
+}
+        
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+        
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+        
+/* Some media queries for responsiveness */
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 3px; /* Adjust the padding values as needed */
+  text-align: center;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Link styles within the footer */
+footer a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px dotted #fff;
+}
+
+footer a:hover {
+  color: #fff;
+  border-bottom: none;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 15vh;
+  }
+
+  header span {
+    right:0;
+  }
+  
+  header img {
+    height: 30%;
+    margin-right: 5px;
+  }
+
+  header h1 {
+    font-size: 15px;
+  }
+
+  main {
+    height: 75vh;
+  }
+
+}

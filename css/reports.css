@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 50px;
+    color: #1e90ff;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button span {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+}
+
+.button.new {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.permohonan {
+    background-color: #FF4136;
+}
+
+.panel {
+    background-color: #FF851B;
+}
+
+.fakulti {
+    background-color: #2ECC40;
+}
+
+.program {
+    background-color: #0074D9;
+}
+
+.laporan {
+    background-color: #B10DC9;
+}
+
+.akreditasi {
+    background-color: #44789f;
+}
+
+.status {
+    background-color: #532a88;
+}
+
+.penerimaan {
+    background-color: #70303c;
+}
+
+.tersenarai {
+    background-color: #2ca597;
+}
+
+.belum {
+    background-color: #20aeb6;
+}
+
+.penilai {
+    background-color: #51081d;
+}

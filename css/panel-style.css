@@ -1,0 +1,305 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, sans-serif;
+}
+
+.main-container {
+	margin: 30px auto;
+	max-width: 800px;
+	padding: 20px;
+	background-color: #fff;
+	border: 2.5px solid #fff;
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 20vh;
+	background-color: #ffffff;
+	
+}
+
+header span {
+    position: fixed;
+    left: 5%;
+}
+
+header img {
+    height: 50%;
+    margin-right: 70px;
+    margin-left:100px;
+}
+
+h1 {
+	font-size: 50px;
+	color: black;
+	text-align: center;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+        
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 10px 10px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+        
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+        
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    font-size: 46px;
+    margin-left: 50px;
+}
+        
+        
+        
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: green;
+    color: white;
+}
+        
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+        
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+        
+/* Some media queries for responsiveness */
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.header {
+    font-size: 40px;
+    color: #111;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.big-box {
+	padding: 20px;
+	border: 2.5px solid #fff;
+}
+
+.title-box {
+	font-size: 30px;
+	color: black;
+	margin-bottom: 20px;
+}
+
+.input-box {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+
+.input-title {
+	flex: 1;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.input-field {
+    flex: 2;
+    padding: 12px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 12px;
+    min-width: 2px;
+}
+
+.file-field {
+	flex: 2;
+	padding: 5px;
+	font-size: 20px;
+	border: 2.5px solid #ffffff;
+}
+
+.select-field {
+    flex: 2;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    min-width: 1px;
+}
+
+.select-field-2 {
+    width: 580px;
+    padding: 12px;
+    font-size: 18px;
+    border: 2.5px solid #818181;
+    border-radius: 12px;
+    min-width: 1px;
+}
+
+
+.date-field {
+	flex: 2;
+	padding: 5px;
+	font-size: 20px;
+	border: 2.5px solid #ffffff;
+}
+
+.button-box {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.submit-button {
+	padding: 10px 20px;
+    font-size: 20px;
+    background-color: #2548ba;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+background-color: #0055a5;
+}
+
+.big-box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.big-box {
+    border: 2.5px solid #f2f2f2;
+    border-radius: 10px;
+}
+
+.main-container {
+    background-color: #ffffff;
+    border: 2px solid darkgray;
+    max-width: 1200px;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.btn-submit {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn-submit:hover {
+    background-color: #1E88E5;
+}
+
+button {
+background-color: #4CAF50;
+color: white;
+padding: 10px 18px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #3e8e41;
+}
+
+/* Footer styles */
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+        
+/* Link styles within the footer */
+    footer a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+}
+        
+footer a:hover {
+    color: #fff;
+    border-bottom: none;
+}
+        
+@media only screen and (max-width: 800px) {
+header {
+    height: 15vh;
+}
+        
+header span {
+    position : absolute;
+    left:0px;
+}
+          
+header img {
+    height: 30%;
+    margin-right: 5px;
+  }
+        
+header h1 {font-size: 15px;}
+.box      {width: 100%;}
+.input-box {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+
+}

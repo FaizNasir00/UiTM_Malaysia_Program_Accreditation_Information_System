@@ -1,0 +1,136 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  background-color: #ffffff;
+}
+
+header img {
+  height: 80%;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: #1e90ff;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 250px;
+  margin: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  text-decoration: none;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button span {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.permohonan {
+  background-color: #FF4136;
+}
+
+.panel {
+  background-color: #FF851B;
+}
+
+.fakulti {
+  background-color: #2ECC40;
+}
+
+.program {
+  background-color: #0074D9;
+}
+
+.report {
+  background-color: #B10DC9;
+}
+
+.logout {
+    background-color: #CA8096;
+    height: 100px;
+    width: 100px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 15vh;
+  }
+
+  header img {
+    height: 70%;
+    margin-right: 5px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    height: 75vh;
+  }
+
+  .button-container {
+    max-width: 100%;
+  }
+
+  .button {
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+  }
+
+  .logout {
+    height: 60px;
+    width: 60px;
+  }
+
+  .button span {
+    font-size: 20px;
+  }
+}

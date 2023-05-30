@@ -1,0 +1,125 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  a {
+    color: #007bff;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #007bff;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form label {
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    display: block;
+    letter-spacing: 1px;
+  }
+  
+  form select,
+  form input[type="text"],
+  form input[type="date"] {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  form input[type="date"]::-webkit-inner-spin-button,
+  form input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  
+  form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  thead th {
+    padding: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  tbody td {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody td strong {
+    font-weight: bold;
+  }
+  

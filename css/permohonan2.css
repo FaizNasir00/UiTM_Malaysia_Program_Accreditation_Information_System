@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    background-color: #ffffff;
+  }
+  
+  header img {
+    height: 80%;
+    margin-right: 10px;
+  }
+  
+  h1,
+  h2 {
+    font-size: 50px;
+    color: #1e90ff;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  
+  .main-box {
+    width: 80%;
+    border: 2.5px solid #cc0000;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .subheader {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .input-text {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border: 1px solid #cccccc;
+  }
+  
+  .btn-submit {
+    display: inline-block;
+    background-color: #1e90ff;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0000ff;
+  }
+  
